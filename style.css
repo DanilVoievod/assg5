@@ -1,0 +1,85 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Apply styles to the nav-bar class */
+.nav-bar {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Style the navigation links */
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+/* Apply styles to the content class */
+.content {
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Apply styles to the footer class */
+.footer {
+    background-color: #34495e; /* Dark Blue-Gray */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles for better visibility */
+h1 {
+    color: #2c3e50; /* Dark Blue-Grey */
+}
+
+/* Style the copyright text in the footer */
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Hover effect for navigation links */
+.nav-bar a:hover {
+    background-color: #2980b9; /* Dark Blue on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .nav-bar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .footer {
+        position: static;
+    }
+}
+
+/* Visibility property */
+/* Show the content class by default */
+.content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Hide the content class by default */
+body:not(:hover) .content {
+    visibility: hidden;
+    opacity: 0;
+}
