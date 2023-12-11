@@ -83,3 +83,16 @@ body:not(:hover) .content {
     visibility: hidden;
     opacity: 0;
 }
+
+/* Image filter styles */
+.sample-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    filter: grayscale(0%); /* Initially no grayscale filter */
+    transition: filter 0.5s ease-in-out;
+}
+
+.sample-image:hover {
+    filter: grayscale(100%); /* Apply grayscale filter on hover */
+}
